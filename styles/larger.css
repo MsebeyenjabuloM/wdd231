@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+    }
+
+    .nav-menu li {
+        padding: 0;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
+}

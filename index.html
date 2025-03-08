@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Set up</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="Welcome to My Course Home Page">
+    <meta name="author" content="Msebe Magubane">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>Msebe</h1>
+    <header>
+        <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        <span class="name">Msebe Magubane</span>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="https://github.com/MsebeyenjabuloM" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+        </section>
+        <section class="card">
+            <h2>Durban, South Africa</h2>
+            <img src="images/durban-sunset.jpg" alt="Durban Sunset" class="location-img">
+        </section>
+        <section class="card full-width">
+            <h2>Certificate Courses</h2>
+            <div id="courses-container"></div>
+            <div class="course-buttons">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Msebeyenjabulo, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
