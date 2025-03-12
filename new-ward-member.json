@@ -1,0 +1,24 @@
+{
+    "family_name": "Magubane",
+    "move_in_date": "2025-02-14",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Sebo Magubane",
+        "gender": "Female",
+        "birthdate": "1985-04-11"
+      },
+      {
+        "name": "Msebe Magubane",
+        "gender": "Female",
+        "birthdate": "2003-08-02"
+      },
+      {
+        "name": "Njabulo Magubane",
+        "gender": "Female",
+        "birthdate": "2012-06-12"
+      }
+    ]
+  }
+  
