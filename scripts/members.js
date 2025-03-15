@@ -5,7 +5,8 @@
         "email": "contact@asantesolutions.com",
         "phone": "031-555-1234",
         "url": "https://asantesolutions.com",
-        "image": "asantesolutions.jpg"
+        "image": "asantesolutions.jpg",
+        "membership level": "silver"
     },
     {
         "name": "Seaside Coffee",
@@ -13,7 +14,8 @@
         "email": "info@seasidecoffee.com",
         "phone": "031-888-9876",
         "url": "https://seasidecoffee.com",
-        "image": "seasidecoffee.jpg"
+        "image": "seasidecoffee.jpg",
+        "membership level": "member"
     },
     {
         "name": "Zen Spa",
@@ -21,6 +23,7 @@
         "email": "contact@zenspa.com",
         "phone": "031-222-4226",
         "url": "https://zenspa.com",
-        "image": "zenspa.jpg"
+        "image": "zenspa.jpg",
+        "membership level": "gold"
     }
 ]
