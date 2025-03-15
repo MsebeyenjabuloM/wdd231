@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce Directory for Durban, KZN">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Msebeyenjabulo">
     <meta property="og:title" content="Durban Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="path-to-durban-image.jpg">
-    <meta property="og:url" content="your-github-url">
+    <meta property="og:url" content="https://github.com/MsebeyenjabuloM/wdd231.git">
     <title>Durban Chamber of Commerce Directory</title>
-    <link rel="icon" href="path-to-favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/small.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <script src="../scripts/script.js" defer></script>
 
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="durban-logo.png" alt="Durban Chamber Logo">
-            <h1>Durban Chamber of Commerce</h1>
+            <img src="../images/durban-logo.png" alt="Durban Chamber Logo">
+            <h2>Durban Chamber of Commerce</h2>
         </div>
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul class="nav-menu">
+                <li><a href="chamber.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" target="_blank">Directory</a></li>
+                <li><a href="join.html" target="_blank">Join</a></li>
             </ul>
-            <div class="hamburger-menu">&#9776;</div>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="path-to-durban-image.jpg" alt="Durban City View">
+        <img src="../images/durban-hero-image.jpg" alt="Durban City View">
         <div class="hero-text">
             <h2>Connecting Businesses in Durban</h2>
             <p>Join the leading business network in KZN.</p>
@@ -69,7 +70,7 @@
 
         <section class="business-directory">
             <div class="business-card">
-                <img src="asantesolutions.jpg" alt="Asante Solutions">
+                <img src="../images/asantesolutions.jpeg" alt="Asante Solutions">
                 <div class="business-info">
                     <h3>Asante Solutions</h3>
                     <p>Innovative Digital Marketing Solutions</p>
@@ -79,7 +80,7 @@
                 </div>
             </div>
             <div class="business-card">
-                <img src="seasidecoffee.jpg" alt="Seaside Coffee">
+                <img src="../images/seasidecoffee.jpeg" alt="Seaside Coffee">
                 <div class="business-info">
                     <h3>Seaside Coffee</h3>
                     <p>Best Coffee in Town</p>
@@ -89,7 +90,7 @@
                 </div>
             </div>
             <div class="business-card">
-                <img src="zenspa.jpg" alt="Zen Spa">
+                <img src="../images/zenspa.jpeg" alt="Zen Spa">
                 <div class="business-info">
                     <h3>Zen Spa</h3>
                     <p>Experience of Relaxation</p>
@@ -108,13 +109,13 @@
             <p>123 Chamber Street, Durban, KZN | Email: contact@durbanchamber.com | Phone: 031-123-4567</p>
         </div>
         <div class="social-media">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://facebook.com"><img src="/images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com"><img src="/images/linkedin.png" alt="LinkedIn"></a>
         </div>
         <div class="developer-info">
-            <p>WDD 231 | Your Name</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="currentyear"></span> Msebeyenjabulo, South Africa</p>
+            <p id="lastModified"></p>
         </div>
     </footer>
 
