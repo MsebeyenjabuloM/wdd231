@@ -7,18 +7,17 @@
     <meta name="author" content="Msebeyenjabulo">
     <meta property="og:title" content="Durban Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="path-to-durban-image.jpg">
+    <meta property="og:image" content="../images/durban-hero-image.jpg">
     <meta property="og:url" content="https://github.com/MsebeyenjabuloM/wdd231.git">
     <title>Durban Chamber of Commerce Directory</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/small.css">
     <link rel="stylesheet" href="../styles/larger.css">
-    <script src="../scripts/script.js" defer></script>
-
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/data.js" defer></script>
 </head>
 <body>
-
     <header>
         <div class="logo-container">
             <img src="../images/durban-logo.png" alt="Durban Chamber Logo">
@@ -27,10 +26,10 @@
         <nav>
             <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
             <ul class="nav-menu">
-                <li><a href="chamber.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" target="_blank">Directory</a></li>
-                <li><a href="join.html" target="_blank">Join</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -45,28 +44,25 @@
     </section>
 
     <main>
-
         <section class="info-row">
             <div class="event-card">
                 <h3>Upcoming Events</h3>
-                <p>Placeholder text for upcoming event details.</p>
+                <p><strong>Business Networking Breakfast</strong> – Join us on April 5th for an exclusive networking event with industry leaders.</p>
             </div>
             <div class="weather-card">
-                <h2>Current Weather</h2>
-                <p>Durban, KZN</p>
-                <p>Temperature: 24°C</p>
-                <p>Condition: Sunny</p>
-                <p>Wind: 10 km/h</p>    
-            </div>
-            <div class="forecast-card">
-                <h2>Current Weather</h2>
+                <h3>Current Weather</h3>
                 <p>Durban, KZN</p>
                 <p>Temperature: 24°C</p>
                 <p>Condition: Sunny</p>
                 <p>Wind: 10 km/h</p>
             </div>
+            <div class="forecast-card">
+                <h3>3-Day Forecast</h3>
+                <p><strong>Mon:</strong> Sunny, 26°C, Light breeze.</p>
+                <p><strong>Tues:</strong> Partly cloudy, 24°C, Winds at 15 km/h.</p>
+                <p><strong>Wed:</strong> Scattered showers, 22°C, Humidity 78%.</p>
+            </div>
         </section>
-
 
         <section class="business-directory">
             <div class="business-card">
@@ -93,7 +89,7 @@
                 <img src="../images/zenspa.jpeg" alt="Zen Spa">
                 <div class="business-info">
                     <h3>Zen Spa</h3>
-                    <p>Experience of Relaxation</p>
+                    <p>Experience Relaxation</p>
                     <p>Email: contact@zenspa.com</p>
                     <p>Phone: 031-222-4226</p>
                     <a href="https://zenspa.com">Visit Website</a>
@@ -102,24 +98,22 @@
         </section>
     </main>
 
-
     <footer>
         <div class="footer-info">
-            <p>&copy; <span id="year"></span> Durban Chamber of Commerce</p>
-            <p>123 Chamber Street, Durban, KZN | Email: contact@durbanchamber.com | Phone: 031-123-4567</p>
+            <p>&copy; <span id="currentyear"></span> Durban Chamber of Commerce</p>
+            <p>123 Chamber Street, Durban</p>
+            <p>KZN Email: contact@durbanchamber.com</p>
+            <p>Phone: 031-123-4567</p>
         </div>
         <div class="social-media">
-            <a href="https://facebook.com"><img src="/images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="/images/twitter.png" alt="Twitter"></a>
-            <a href="https://linkedin.com"><img src="/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
         </div>
         <div class="developer-info">
             <p>&copy; <span id="currentyear"></span> Msebeyenjabulo, South Africa</p>
-            <p id="lastModified"></p>
+            <p id="lastModified">2025/03/15</p>
         </div>
     </footer>
-
-    <script src="scripts/script.js"></script>
-
 </body>
 </html>
