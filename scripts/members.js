@@ -28,5 +28,53 @@
         "image": "zenspa.jpg",
         "membership level": "gold",
         "address": "501 Peter Mokaba Road, Morningside"
+    },
+
+
+
+
+    {
+        "name": "Elizabeth Gordon Gallery",
+        "tagline": "KZN's premier commercial art gallery",
+        "email": "joy@elizabethgordon.co.za",
+        "phone": "031-03-8133",
+        "url": "https://elizabethgordon.co.za/",
+        "image": "artgallery.jpg",
+        "membership level": "member",
+        "address": "148 Montpelier Rd, Durban"
+    },
+    {
+        "name": "Madam & Sir",
+        "tagline": "Savor the Art of Fine Dining Hospitality",
+        "email": "Bookings@madamandsir.co.za",
+        "phone": "031-816-6670",
+        "url": "https://madamandsir.co.za",
+        "image": "madam&sir.jpg",
+        "membership level": "gold",
+        "address": "262 Florida Rd, Morningside, Durban, "
+    },
+
+
+
+    
+    {
+        "name": "Zen Spa",
+        "tagline": "Experience of Relaxation",
+        "email": "contact@zenspa.com",
+        "phone": "031-222-4226",
+        "url": "https://zenspa.com",
+        "image": "zenspa.jpg",
+        "membership level": "gold",
+        "address": "501 Peter Mokaba Road, Morningside"
+    },
+    {
+        "name": "Zen Spa",
+        "tagline": "Experience of Relaxation",
+        "email": "contact@zenspa.com",
+        "phone": "031-222-4226",
+        "url": "https://zenspa.com",
+        "image": "zenspa.jpg",
+        "membership level": "gold",
+        "address": "501 Peter Mokaba Road, Morningside"
     }
 ]
