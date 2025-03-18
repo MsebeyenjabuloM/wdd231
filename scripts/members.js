@@ -6,7 +6,7 @@
         "phone": "031-555-1234",
         "url": "https://asantesolutions.com",
         "image": "asantesolutions.jpg",
-        "membership level": "silver",
+        "membership_level": "silver",
         "address": "56 Oakwood Drive, Durban Central"
     },
     {
@@ -16,7 +16,7 @@
         "phone": "031-888-9876",
         "url": "https://seasidecoffee.com",
         "image": "seasidecoffee.jpg",
-        "membership level": "member",
+        "membership_level": "member",
         "address": "88 Rainbow Circle, Old Mill Road, Durban"
     },
     {
@@ -26,7 +26,7 @@
         "phone": "031-222-4226",
         "url": "https://zenspa.com",
         "image": "zenspa.jpg",
-        "membership level": "gold",
+        "membership_level": "gold",
         "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
     {
@@ -36,7 +36,7 @@
         "phone": "031-03-8133",
         "url": "https://elizabethgordon.co.za/",
         "image": "artgallery.jpg",
-        "membership level": "member",
+        "membership_level": "member",
         "address": "148 Montpelier Rd, Durban"
     },
     {
@@ -46,7 +46,7 @@
         "phone": "031-816-6670",
         "url": "https://madamandsir.co.za",
         "image": "madam&sir.jpg",
-        "membership level": "gold",
+        "membership_level": "gold",
         "address": "262 Florida Rd, Morningside, Durban, "
     },
     {
@@ -56,7 +56,7 @@
         "phone": "072-424-0161",
         "url": "https://indonifashionhouse.com/",
         "image": "fashionhouse.jpg",
-        "membership level": "silver",
+        "membership_level": "silver",
         "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
     {
@@ -66,7 +66,7 @@
         "phone": "063-870-8958",
         "url": "https://lifestylegym.co.za/",
         "image": "lifestylegym.jpg",
-        "membership level": "member",
+        "membership_level": "member",
         "address": "181 Lothian Road, Durban North"
     }
 ]
