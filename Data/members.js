@@ -5,7 +5,7 @@
         "email": "contact@asantesolutions.com",
         "phone": "031-555-1234",
         "url": "https://asantesolutions.com",
-        "image": "asantesolutions.jpg",
+        "image": "asantesolutions.jpeg",
         "membership_level": "silver",
         "address": "56 Oakwood Drive, Durban Central"
     },
@@ -15,7 +15,7 @@
         "email": "info@seasidecoffee.com",
         "phone": "031-888-9876",
         "url": "https://seasidecoffee.com",
-        "image": "seasidecoffee.jpg",
+        "image": "seasidecoffee.jpeg",
         "membership_level": "member",
         "address": "88 Rainbow Circle, Old Mill Road, Durban"
     },
@@ -25,7 +25,7 @@
         "email": "contact@zenspa.com",
         "phone": "031-222-4226",
         "url": "https://zenspa.com",
-        "image": "zenspa.jpg",
+        "image": "zenspa.jpeg",
         "membership_level": "gold",
         "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
@@ -35,7 +35,7 @@
         "email": "joy@elizabethgordon.co.za",
         "phone": "031-03-8133",
         "url": "https://elizabethgordon.co.za/",
-        "image": "artgallery.jpg",
+        "image": "artgallery.jpeg",
         "membership_level": "member",
         "address": "148 Montpelier Rd, Durban"
     },
@@ -45,7 +45,7 @@
         "email": "Bookings@madamandsir.co.za",
         "phone": "031-816-6670",
         "url": "https://madamandsir.co.za",
-        "image": "madam&sir.jpg",
+        "image": "madam&sir.jpeg",
         "membership_level": "gold",
         "address": "262 Florida Rd, Morningside, Durban, "
     },
@@ -55,7 +55,7 @@
         "email": "info@indonifashionhouse.com",
         "phone": "072-424-0161",
         "url": "https://indonifashionhouse.com/",
-        "image": "fashionhouse.jpg",
+        "image": "fashionhouse.jpeg",
         "membership_level": "silver",
         "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
@@ -65,7 +65,7 @@
         "email": "join@lifestylegym.com",
         "phone": "063-870-8958",
         "url": "https://lifestylegym.co.za/",
-        "image": "lifestylegym.jpg",
+        "image": "lifestylegym.jpeg",
         "membership_level": "member",
         "address": "181 Lothian Road, Durban North"
     }
