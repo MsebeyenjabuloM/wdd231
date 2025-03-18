@@ -17,7 +17,7 @@
         "url": "https://seasidecoffee.com",
         "image": "seasidecoffee.jpg",
         "membership level": "member",
-        "address": "88 Rainbow Circle, Old Mill Road"
+        "address": "88 Rainbow Circle, Old Mill Road, Durban"
     },
     {
         "name": "Zen Spa",
@@ -27,12 +27,8 @@
         "url": "https://zenspa.com",
         "image": "zenspa.jpg",
         "membership level": "gold",
-        "address": "501 Peter Mokaba Road, Morningside"
+        "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
-
-
-
-
     {
         "name": "Elizabeth Gordon Gallery",
         "tagline": "KZN's premier commercial art gallery",
@@ -53,28 +49,24 @@
         "membership level": "gold",
         "address": "262 Florida Rd, Morningside, Durban, "
     },
-
-
-
-    
     {
-        "name": "Zen Spa",
-        "tagline": "Experience of Relaxation",
-        "email": "contact@zenspa.com",
-        "phone": "031-222-4226",
-        "url": "https://zenspa.com",
-        "image": "zenspa.jpg",
-        "membership level": "gold",
-        "address": "501 Peter Mokaba Road, Morningside"
+        "name": "Indoni Fashion House",
+        "tagline": "",
+        "email": "info@indonifashionhouse.com",
+        "phone": "072-424-0161",
+        "url": "https://indonifashionhouse.com/",
+        "image": "fashionhouse.jpg",
+        "membership level": "silver",
+        "address": "501 Peter Mokaba Road, Morningside, Durban"
     },
     {
-        "name": "Zen Spa",
-        "tagline": "Experience of Relaxation",
-        "email": "contact@zenspa.com",
-        "phone": "031-222-4226",
-        "url": "https://zenspa.com",
-        "image": "zenspa.jpg",
-        "membership level": "gold",
-        "address": "501 Peter Mokaba Road, Morningside"
+        "name": "Lifestyle Gym",
+        "tagline": "A functional fitness & lifestyle centre in Durban North",
+        "email": "join@lifestylegym.com",
+        "phone": "063-870-8958",
+        "url": "https://lifestylegym.co.za/",
+        "image": "lifestylegym.jpg",
+        "membership level": "member",
+        "address": "181 Lothian Road, Durban North"
     }
 ]
