@@ -282,6 +282,66 @@ main {
     }
 }
 
+#business-spotlight {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.spotlight-card {
+    flex: 1 1 30%;
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.spotlight-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight-info h3 {
+    font-size: 1.2rem;
+    color: #fd93c8;
+}
+
+.spotlight-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.spotlight-info a {
+    color: #fd93c8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Make the layout responsive */
+@media screen and (max-width: 768px) {
+    #business-spotlight {
+        flex-direction: column;
+    }
+
+    .spotlight-card {
+        flex: 1 1 100%;
+    }
+}
+
+
 
 footer {
     text-align: center;
