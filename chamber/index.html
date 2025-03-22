@@ -52,22 +52,24 @@
             </div>
             <div class="weather-card">
                 <h3>Current Weather</h3>
-                <p>Durban, KZN</p>
-                <p>Temperature: 24°C</p>
-                <p>Condition: Sunny</p>
-                <p>Wind: 10 km/h</p>
+                <p id="current-location">Durban, KZN</p>
+                <p id="current-temperature">Temperature: </p>
+                <p id="current-condition">Condition: </p>
+                <p id="current-wind">Wind: </p>
             </div>
             <div class="forecast-card">
                 <h3>3-Day Forecast</h3>
-                <p><strong>Mon:</strong> Sunny, 26°C, Light breeze.</p>
-                <p><strong>Tues:</strong> Partly cloudy, 24°C, Winds at 15 km/h.</p>
-                <p><strong>Wed:</strong> Scattered showers, 22°C, Humidity 78%.</p>
+                <p id="forecast-day1"></p>
+                <p id="forecast-day2"></p>
+                <p id="forecast-day3"></p>
             </div>
         </section>
         <section class="business-directory" id="business-cards">
             <script src="../scripts/directory.js"></script>
         </section>
-        <div id="business-spotlight"></div>
+        <h2>Business Spotlight</h2>
+        <section id="business-spotlight">
+        </section>        
 
     </main>
 
@@ -88,5 +90,7 @@
         </div>
     </footer>
     <script src="../Data/spotlight.js"></script>
+    <script src="../Data/weather.js" defer></script>
+
 </body>
 </html>

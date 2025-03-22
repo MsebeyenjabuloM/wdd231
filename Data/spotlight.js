@@ -14,6 +14,7 @@ const members = [
         "membership_level": "silver",
         "address": "56 Oakwood Drive, Durban Central"
     },
+
     {
         "name": "Seaside Coffee",
         "tagline": "Best Coffee in Town",
@@ -52,7 +53,7 @@ const members = [
         "url": "https://madamandsir.co.za",
         "image": "madam&sir.jpeg",
         "membership_level": "gold",
-        "address": "262 Florida Rd, Morningside, Durban"
+        "address": "262 Florida Rd, Morningside, Durban, "
     },
     {
         "name": "Indoni Fashion House",
@@ -74,6 +75,7 @@ const members = [
         "membership_level": "member",
         "address": "181 Lothian Road, Durban North"
     }
+
 ];
 
 function displaySpotlight() {
@@ -81,7 +83,7 @@ function displaySpotlight() {
 
     // Filter only gold and silver members
     const spotlightMembers = members.filter(member =>
-        member.membership_level === "gold" || member.membership_level === "silver"
+        member.membership_level === "gold" || member.membership_level === "silver" || member.membership_level === "member"
     );
 
     // Shuffle the array and pick up to 3 members
@@ -92,12 +94,16 @@ function displaySpotlight() {
         card.classList.add("spotlight-card");
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo">
-            <h3>${member.name}</h3>
-            <p>${member.tagline}</p>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <a href="${member.url}" target="_blank">Visit Website</a>
+        <img src="../images/${member.image}" alt="${member.name} logo">
+        <div class="spotlight-info">
+                <h3>${member.name}</h3>
+                <p><strong>Tagline:</strong> ${member.tagline}</p>
+                <p><strong>Email:</strong> ${member.email}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Membership Level:</strong> ${member.membership_level}</p>
+                <a href="${member.url}" target="_blank">Visit Website</a>
+            </div>
         `;
 
         spotlightContainer.appendChild(card);
@@ -107,28 +113,4 @@ function displaySpotlight() {
 function getRandomMembers(array, count) {
     let shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
-}
-
-function displaySpotlight() {
-    const spotlightContainer = document.querySelector("#business-spotlight");
-
-    // Loop through members and generate cards
-    members.forEach(member => {
-        let card = document.createElement("div");
-        card.classList.add("spotlight-card");
-
-        card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo">
-            <div class="spotlight-info">
-                <h3>${member.name}</h3>
-                <p><strong>Tagline:</strong> ${member.tagline}</p>
-                <p><strong>Email:</strong> ${member.email}</p>
-                <p><strong>Phone:</strong> ${member.phone}</p>
-                <p><strong>Address:</strong> ${member.address}</p>
-                <a href="${member.url}" target="_blank">Visit Website</a>
-            </div>
-        `;
-
-        spotlightContainer.appendChild(card);
-    });
 }
