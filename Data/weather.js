@@ -25,26 +25,48 @@ async function fetchWeatherData() {
             throw new Error("Invalid API response structure");
         }
 
-        // Extract weather info
+        // Update current weather section
         document.getElementById('current-temperature').textContent = `Temperature: ${currentWeatherData.main.temp}°C`;
         document.getElementById('current-condition').textContent = `Condition: ${currentWeatherData.weather[0].description}`;
         document.getElementById('current-wind').textContent = `Wind: ${currentWeatherData.wind.speed} km/h`;
 
-        // Update 3-day forecast
-        const forecastContainer = document.querySelector('.forecast-card');
-        forecastContainer.innerHTML = "<h3>3-Day Forecast</h3>";
-        const forecast = forecastData.list.filter((_, index) => index % 8 === 0).slice(0, 3);
+        // Ensure forecast elements exist
+        const forecastDay1 = document.getElementById('forecast-day1');
+        const forecastDay2 = document.getElementById('forecast-day2');
+        const forecastDay3 = document.getElementById('forecast-day3');
 
-        forecast.forEach((day, index) => {
-            const date = new Date(day.dt_txt);
-            document.getElementById(`forecast-day${index + 1}`).textContent = 
-                `${date.toLocaleDateString()} - ${day.weather[0].description}, ${day.main.temp}°C`;
+        if (!forecastDay1 || !forecastDay2 || !forecastDay3) {
+            console.error("Forecast elements not found in the DOM");
+            return;
+        }
+
+        // Extract 3-day forecast
+        let forecastDays = {};
+        const threeDayForecast = [];
+
+        for (let i = 0; i < forecastData.list.length; i++) {
+            let date = new Date(forecastData.list[i].dt_txt).toLocaleDateString();
+
+            if (!forecastDays[date]) {
+                forecastDays[date] = forecastData.list[i];
+                threeDayForecast.push(forecastData.list[i]);
+            }
+
+            if (threeDayForecast.length === 3) break;
+        }
+
+        // Display 3-day forecast
+        [forecastDay1, forecastDay2, forecastDay3].forEach((element, index) => {
+            let day = threeDayForecast[index];
+            let date = new Date(day.dt_txt).toLocaleDateString();
+            element.textContent = `${date} - ${day.weather[0].description}, ${day.main.temp}°C`;
         });
+
     } catch (error) {
         console.error("Error fetching weather data:", error);
         document.getElementById('weather').textContent = "Weather data unavailable.";
     }
 }
 
-// Run function on load
+// Ensure function runs after DOM is loaded
 document.addEventListener("DOMContentLoaded", fetchWeatherData);
