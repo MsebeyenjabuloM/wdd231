@@ -7,19 +7,6 @@ const listBtn = document.querySelector('#list-view');
 
 let members = []; // Store members globally
 
-async function getMembers() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        members = data.members; // Store fetched data globally
-        displayMembers(members, "grid"); // Load grid view by default
-    } catch (error) {
-        console.error("Error fetching members:", error);
-    }
-}
-
-getMembers(); // Call function on page load
-
 // Toggle between Grid and List View
 gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
 listBtn.addEventListener("click", () => displayMembers(members, "list"));
@@ -31,18 +18,30 @@ async function getMembers() {
         const response = await fetch(url);
         const data = await response.json();
         displayMembers(data.members, "grid");
-    } catch (error) {
-        console.error("Error fetching members:", error);
-    }
+     // Attach event listeners AFTER data is loaded
+     gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
+     listBtn.addEventListener("click", () => displayMembers(members, "list"));
+ } catch (error) {
+     console.error("Error fetching members:", error);
+ }
 }
 
 // Function to display members in cards (grid) or list
 function displayMembers(members, layout = "grid") {
-    membersContainer.innerHTML = ""; // Clear container before adding new items
+    membersContainer.innerHTML = ""; // Clear container
+
+    if (layout === "grid") {
+        membersContainer.classList.add("grid-layout");
+        membersContainer.classList.remove("list-layout");
+    } else {
+        membersContainer.classList.add("list-layout");
+        membersContainer.classList.remove("grid-layout");
+    }
+
     members.forEach(member => {
         let memberElement = document.createElement("div");
         memberElement.classList.add("member-card");
-        
+
         if (layout === "list") {
             memberElement.classList.add("list-view");
             memberElement.innerHTML = `
@@ -61,14 +60,15 @@ function displayMembers(members, layout = "grid") {
                 <a href="${member.url}" target="_blank">${member.url}</a>
             `;
         }
-        
+
         membersContainer.appendChild(memberElement);
     });
 }
 
+
 // Toggle between Grid and List View
-gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
-listBtn.addEventListener("click", () => displayMembers(members, "list"));
+//gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
+//listBtn.addEventListener("click", () => displayMembers(members, "list"));
 
 // Fetch and display members when page loads
 getMembers();

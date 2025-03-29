@@ -370,6 +370,20 @@ button:hover {
     color: white;
 }
 
+/* Grid Layout */
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* List Layout */
+.list-layout {
+    display: block;
+    text-align: center;
+}
+
 /* Grid View */
 .grid-view {
     display: flex;
