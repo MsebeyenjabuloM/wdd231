@@ -8,11 +8,13 @@ let members = []; // Store members globally
 // Fetch data from JSON and display it
 async function getMembers() {
     try {
+        console.log("Fetching members...");
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
+        console.log("Fetched Data:", data); 
         members = data.members; // Store data globally
         displayMembers(members, "grid");
     } catch (error) {
@@ -51,13 +53,27 @@ function displayMembers(members, layout = "grid") {
                 <img src="${member.image}" alt="${member.name}">
                 <h3>${member.name}</h3>
                 <p>${member.tagline}</p>
-                <a href="${member.url}" target="_blank">${member.url}</a>
+                <a href="${member.url}" target="_blank">
+    ${member.url.length > 20 ? member.url.substring(0, 17) + "..." : member.url}
+</a>
+
             `;
         }
 
         membersContainer.appendChild(memberElement);
     });
 }
+
+gridBtn.addEventListener("click", () => {
+    console.log("Grid button clicked");  
+    displayMembers(members, "grid");
+});
+
+listBtn.addEventListener("click", () => {
+    console.log("List button clicked");  
+    displayMembers(members, "list");
+});
+
 
 // Fetch members when page loads
 document.addEventListener("DOMContentLoaded", getMembers);
