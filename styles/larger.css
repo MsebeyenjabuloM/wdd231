@@ -345,16 +345,14 @@ main {
 
 /* Directory Page CSS*/
 .members-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    max-width: 900px;  
-    margin: 20px auto;  
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        max-width: 800px; /* Adjust width to fit two cards properly */
+        margin: auto;
+    }     
 
-}
 
 button {
     background-color: #fd93c8;
