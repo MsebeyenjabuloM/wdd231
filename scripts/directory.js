@@ -1,32 +1,26 @@
-// scripts/directory.js
-
-const url = 'data/members.json'; // Path to your JSON file
-const membersContainer = document.querySelector('.members-container'); // Where the data will go
+const url = 'data/members.json'; // JSON file path
+const membersContainer = document.querySelector('.members-container');
 const gridBtn = document.querySelector('#grid-view');
 const listBtn = document.querySelector('#list-view');
 
 let members = []; // Store members globally
 
-// Toggle between Grid and List View
-gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
-listBtn.addEventListener("click", () => displayMembers(members, "list"));
-
-
 // Fetch data from JSON and display it
 async function getMembers() {
     try {
         const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const data = await response.json();
-        displayMembers(data.members, "grid");
-     // Attach event listeners AFTER data is loaded
-     gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
-     listBtn.addEventListener("click", () => displayMembers(members, "list"));
- } catch (error) {
-     console.error("Error fetching members:", error);
- }
+        members = data.members; // Store data globally
+        displayMembers(members, "grid");
+    } catch (error) {
+        console.error("Error fetching members:", error);
+    }
 }
 
-// Function to display members in cards (grid) or list
+// Function to display members
 function displayMembers(members, layout = "grid") {
     membersContainer.innerHTML = ""; // Clear container
 
@@ -65,11 +59,5 @@ function displayMembers(members, layout = "grid") {
     });
 }
 
-
-// Toggle between Grid and List View
-//gridBtn.addEventListener("click", () => displayMembers(members, "grid"));
-//listBtn.addEventListener("click", () => displayMembers(members, "list"));
-
-// Fetch and display members when page loads
-getMembers();
-
+// Fetch members when page loads
+document.addEventListener("DOMContentLoaded", getMembers);

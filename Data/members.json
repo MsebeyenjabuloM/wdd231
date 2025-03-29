@@ -1,4 +1,5 @@
-[
+{
+    "members":[
     {
         "name": "Asante Solutions",
         "tagline": "Innovative Digital Marketing Solutions",
@@ -70,3 +71,4 @@
         "address": "181 Lothian Road, Durban North"
     }
 ]
+}
