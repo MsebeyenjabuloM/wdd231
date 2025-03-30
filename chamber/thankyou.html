@@ -18,6 +18,8 @@
     <script src="../scripts/data.js" defer></script>
     <script src="../data/members.json" defer></script>
     <script src="../scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+
     
 </head>
 <body>
@@ -59,6 +61,15 @@
             const params = new URLSearchParams(window.location.search);
             return params.get(name) || "Not provided";
         }
+
+        function getQueryParams() {
+      const params = {};
+      window.location.search.substring(1).split("&").forEach(pair => {
+        const [key, value] = pair.split("=");
+        params[decodeURIComponent(key)] = decodeURIComponent(value || "");
+      });
+      return params;
+    }
 
             const params = new URLSearchParams(window.location.search);
             document.getElementById("firstName").textContent = params.get("firstName") || "N/A";
