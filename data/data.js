@@ -12,4 +12,3 @@ fetch(url)
   })
   .catch(error => console.error("Error fetching weather data:", error));
 
- // test update 
