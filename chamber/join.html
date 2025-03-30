@@ -16,11 +16,8 @@
     <link rel="stylesheet" href="../styles/larger.css">
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/data.js" defer></script>
-    <script src="../data/members.json" defer></script>
     <script src="../scripts/directory.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
-
-    
 </head>
 <body>
     <header>
@@ -43,7 +40,6 @@
         <section class="form-container">
             <h2>Membership Application</h2>
             <form action="thankyou.html" method="get">
-                
                 <label for="first-name">First Name:</label>
                 <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Enter your first name">
                 
@@ -78,7 +74,6 @@
                 <button type="submit">Submit Application</button>
             </form>
         </section>
-
 
         <h2>Membership Levels</h2>
         <section class="membership-container">
@@ -141,9 +136,6 @@
         </div>
     </div>
 
-    
-    </main>
-
     <footer>
         <div class="footer-info">
             <p>123 Chamber Street, Durban</p>
@@ -160,8 +152,9 @@
             <p id="lastModified">2025/03/15</p>
         </div>
     </footer>
+
     <script>
         document.getElementById("timestamp").value = new Date().toISOString();
-    </script>    
+    </script>
 </body>
 </html>

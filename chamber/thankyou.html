@@ -16,11 +16,8 @@
     <link rel="stylesheet" href="../styles/larger.css">
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/data.js" defer></script>
-    <script src="../data/members.json" defer></script>
     <script src="../scripts/directory.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
-
-    
 </head>
 <body>
     <header>
@@ -52,52 +49,3 @@
                 <p><strong>Business Name:</strong> <span id="businessName"></span></p>
                 <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
             </div>
-    
-            <a href="index.html" class="home-btn">Back to Home</a>
-        </div>
-    
-        <script>
-            function getQueryParam(name) {
-            const params = new URLSearchParams(window.location.search);
-            return params.get(name) || "Not provided";
-        }
-
-        function getQueryParams() {
-      const params = {};
-      window.location.search.substring(1).split("&").forEach(pair => {
-        const [key, value] = pair.split("=");
-        params[decodeURIComponent(key)] = decodeURIComponent(value || "");
-      });
-      return params;
-    }
-
-            const params = new URLSearchParams(window.location.search);
-            document.getElementById("firstName").textContent = params.get("firstName") || "N/A";
-            document.getElementById("lastName").textContent = params.get("lastName") || "N/A";
-            document.getElementById("email").textContent = params.get("email") || "N/A";
-            document.getElementById("mobile").textContent = params.get("mobile") || "N/A";
-            document.getElementById("businessName").textContent = params.get("businessName") || "N/A";
-            document.getElementById("timestamp").textContent = params.get("timestamp") || "N/A";
-        </script>    
-
-
-    </main>
-
-    <footer>
-        <div class="footer-info">
-            <p>123 Chamber Street, Durban</p>
-            <p>KZN Email: contact@durbanchamber.com</p>
-            <p>Phone: 031-123-4567</p>
-        </div>
-        <div class="social-media">
-            <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter"></a>
-            <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
-        </div>
-        <div class="developer-info">
-            <p>&copy; <span id="currentyear"></span> Msebeyenjabulo, South Africa</p>
-            <p id="lastModified">2025/03/15</p>
-        </div>
-    </footer>
-</body>
-</html>
