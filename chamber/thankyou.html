@@ -40,10 +40,9 @@
     <main>
         <div class="thank-you">
             <h1>Thank You for Joining!</h1>
-            <p>We appreciate your interest and will be in touch soon.</p>
+            <p>Here is the information you submitted:</p>
             
             <div class="submitted-info">
-                <h2>Your Submitted Information:</h2>
                 <p><strong>First Name:</strong> <span id="firstName"></span></p>
                 <p><strong>Last Name:</strong> <span id="lastName"></span></p>
                 <p><strong>Email:</strong> <span id="email"></span></p>
@@ -56,6 +55,11 @@
         </div>
     
         <script>
+            function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name) || "Not provided";
+        }
+
             const params = new URLSearchParams(window.location.search);
             document.getElementById("firstName").textContent = params.get("firstName") || "N/A";
             document.getElementById("lastName").textContent = params.get("lastName") || "N/A";
