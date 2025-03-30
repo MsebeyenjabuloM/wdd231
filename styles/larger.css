@@ -93,7 +93,7 @@ nav {
     position: absolute;
     top: 50px;
     right: 0;
-    background-color: #fd93c8;
+    background-color: white;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -116,7 +116,7 @@ nav {
 }
 
 .nav-menu a:hover {
-    background-color: #fff;
+    background-color: #fd93c8;
     color: #000;
     border-radius: 5px;
 }
