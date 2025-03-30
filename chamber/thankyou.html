@@ -49,3 +49,33 @@
                 <p><strong>Business Name:</strong> <span id="businessName"></span></p>
                 <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
             </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>123 Chamber Street, Durban</p>
+            <p>KZN Email: contact@durbanchamber.com</p>
+            <p>Phone: 031-123-4567</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="developer-info">
+            <p>&copy; <span id="currentyear"></span> Msebeyenjabulo, South Africa</p>
+            <p id="lastModified">2025/03/15</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("firstName").textContent = localStorage.getItem("first-name");
+        document.getElementById("lastName").textContent = localStorage.getItem("last-name");
+        document.getElementById("email").textContent = localStorage.getItem("email");
+        document.getElementById("mobile").textContent = localStorage.getItem("phone");
+        document.getElementById("businessName").textContent = localStorage.getItem("organization");
+        document.getElementById("timestamp").textContent = new Date(localStorage.getItem("timestamp")).toLocaleString();
+    </script>
+</body>
+</html>
