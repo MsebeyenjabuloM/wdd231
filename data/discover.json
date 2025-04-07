@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Golden Mile Beachfront",
+      "address": "Golden Mile, Durban, KZN",
+      "description": "A beautiful stretch of beachfront with promenades, activities, and warm waters.",
+      "image": "images/golden-mile.webp"
+    },
+    {
+      "name": "uShaka Marine World",
+      "address": "1 King Shaka Ave, Durban, KZN",
+      "description": "A world-class aquarium, water park, and marine animal encounter.",
+      "image": "images/ushaka.webp"
+    },
+    {
+      "name": "Durban Botanic Gardens",
+      "address": "9A John Zikhali Rd, Berea, Durban",
+      "description": "Africa's oldest surviving botanical garden featuring rare plants.",
+      "image": "images/botanic.webp"
+    },
+    {
+      "name": "Moses Mabhida Stadium",
+      "address": "44 Isaiah Ntshangase Rd, Durban",
+      "description": "An iconic stadium with sky car rides and events.",
+      "image": "images/stadium.webp"
+    },
+    {
+      "name": "Victoria Street Market",
+      "address": "151 Victoria St, Durban",
+      "description": "Bustling market with spices, crafts, and local flavor.",
+      "image": "images/market.webp"
+    },
+    {
+      "name": "KwaMuhle Museum",
+      "address": "130 Bram Fischer Rd, Durban",
+      "description": "Museum about the city's past with powerful exhibits.",
+      "image": "images/museum.webp"
+    },
+    {
+      "name": "Mitchell Park Zoo",
+      "address": "10 Ferndale Rd, Morningside, Durban",
+      "description": "A small zoo and park perfect for family outings.",
+      "image": "images/zoo.webp"
+    },
+    {
+      "name": "Umgeni River Bird Park",
+      "address": "490 Riverside Rd, Durban North",
+      "description": "Home to hundreds of exotic birds in a natural setting.",
+      "image": "images/birdpark.webp"
+    }
+  ]
+  

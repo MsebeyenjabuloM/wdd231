@@ -114,6 +114,35 @@ h1 {
     color: #fd93c8;
 }
 
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .discover-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .discover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
 footer {
     text-align: center;
     padding: 20px;
