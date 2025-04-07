@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch and load cards
-    fetch('data/discover.json')
+    fetch('../data/discover.json')
       .then(response => response.json())
       .then(data => {
         const container = document.querySelector('.discover-grid');
@@ -43,5 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
     visitMsg.textContent = message;
     localStorage.setItem('lastVisit', today.toString());
+  })
+
+  data.forEach((place, index) => {
+    const card = document.createElement('div');
+    card.classList.add('discover-card');
+    card.style.gridArea = `card${index + 1}`;
+  
+    card.innerHTML = `
+      <h2>${place.name}</h2>
+      <figure>
+        <img src="${place.image}" alt="${place.name}">
+      </figure>
+      <address>${place.address}</address>
+      <p>${place.description}</p>
+      <button>Learn More</button>
+    `;
+    container.appendChild(card);
   });
+  
   
