@@ -1,3 +1,12 @@
+  // Hamburger toggle
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+
 document.addEventListener("DOMContentLoaded", () => {
   // Image Grid Hover
   const cards = document.querySelectorAll(".run-card");
@@ -11,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  
   // Random Testimonials
   const testimonials = [
     { name: "Jade", quote: "She Runs helped me find confidence in myself and community in others." },
@@ -30,3 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(div);
   });
 });
+
+
