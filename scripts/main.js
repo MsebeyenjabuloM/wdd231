@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector("#myButton");
+  if (button) {
+    button.addEventListener("click", () => {
+      console.log("Button clicked!");
+    });
+  }
+
+
 // Navigation toggle
 const hamBtn = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav');
@@ -31,4 +40,5 @@ window.addEventListener('load', () => {
     console.log('Welcome back! Last visit:', visit);
     localStorage.setItem('lastVisit', new Date().toISOString());
   }
+});
 });
