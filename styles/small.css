@@ -77,69 +77,88 @@ nav {
     color: #000;
 }
 
-main {
-    padding: 20px;
-}
 
-h1 {
-    color: #000;
-}
 
-.card {
-    margin-bottom: 30px;
-    padding: 15px;
-    background: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#courses-container {
+/* Intro */
+.intro-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .intro-content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.course-buttons button {
-    background-color: #fd93c8;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.course-buttons button:hover {
-    background-color: #000;
-    color: #fd93c8;
-}
-
-.discover-grid {
-    display: grid;
-    grid-template-areas:
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8";
+    flex-direction: row;
     gap: 1rem;
-    padding: 1rem;
+    align-items: center;
+  }
+  .intro-content img {
+    max-width: 40%;
+    border-radius: 0.5rem;
   }
   
-  .discover-card {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
+  /* Image Grid */
+  .run-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .run-card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border 0.3s;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  .run-card:hover {
+    border-color: #ff009d;
+    transform: scale(1.03);
+  }
+  .terrain-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 0, 157, 0.8);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .run-card:hover .terrain-label {
+    opacity: 1;
   }
   
-  .discover-card img {
-    width: 100%;
-    height: auto;
-    display: block;
+  /* Testimonials */
+  .testimonial {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px  #fd93c8;
+    transition: transform 0.3s ease;
+  }
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* CTA */
+  .cta h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .join-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #ff009d;
+    color: white;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .join-btn:hover {
+    background: #cc007f;
   }
   
 

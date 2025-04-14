@@ -1,44 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector("#myButton");
-  if (button) {
-    button.addEventListener("click", () => {
-      console.log("Button clicked!");
+  // Image Grid Hover
+  const cards = document.querySelectorAll(".run-card");
+  cards.forEach(card => {
+    const label = document.createElement("div");
+    label.className = "terrain-label";
+    label.textContent = card.dataset.label;
+    card.appendChild(label);
+    card.addEventListener("click", () => {
+      window.location.href = "join.html";
     });
-  }
+  });
 
+  // Random Testimonials
+  const testimonials = [
+    { name: "Jade", quote: "She Runs helped me find confidence in myself and community in others." },
+    { name: "Emily", quote: "Every run feels like a mini adventure. I’ve made some of my best friends here." },
+    { name: "Sophia", quote: "The supportive vibe and laughter keep me coming back every week." },
+    { name: "Amina", quote: "Never knew running could be this fun and freeing until She Runs." },
+    { name: "Lara", quote: "I’ve grown stronger physically and mentally with this group." }
+  ];
 
-// Navigation toggle
-const hamBtn = document.getElementById('hamburger');
-const navMenu = document.querySelector('nav');
-hamBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-});
+  const randomTestimonials = testimonials.sort(() => 0.5 - Math.random()).slice(0, 3);
+  const container = document.getElementById("testimonial-container");
 
-// Carousel scroll logic (optional next/prev buttons could be added)
-const carousel = document.querySelector('.carousel');
-// Optional: auto-scroll
-let autoScroll = setInterval(() => {
-  carousel.scrollLeft += 1;
-}, 40);
-
-// Modal logic
-const modal = document.getElementById('modal');
-const openModalBtn = document.querySelector('.open-modal');
-const closeModalBtn = document.querySelector('.close-modal');
-
-if (openModalBtn && closeModalBtn && modal) {
-  openModalBtn.addEventListener('click', () => modal.classList.add('visible'));
-  closeModalBtn.addEventListener('click', () => modal.classList.remove('visible'));
-}
-
-// localStorage example - tracking last visit or user name
-window.addEventListener('load', () => {
-  const visit = localStorage.getItem('lastVisit');
-  if (!visit) {
-    localStorage.setItem('lastVisit', new Date().toISOString());
-  } else {
-    console.log('Welcome back! Last visit:', visit);
-    localStorage.setItem('lastVisit', new Date().toISOString());
-  }
-});
+  randomTestimonials.forEach(t => {
+    const div = document.createElement("div");
+    div.className = "testimonial";
+    div.innerHTML = `<p>"${t.quote}" - <strong>${t.name}</strong></p>`;
+    container.appendChild(div);
+  });
 });
