@@ -33,6 +33,7 @@ nav {
   background-color: #fd93c8;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .nav-menu.show {
@@ -70,20 +71,12 @@ header img {
   max-height: 100px; /* Adjust as needed */
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* this spreads out logo and menu */
-  padding: 10px 20px;
-  background-color: #fd93c8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 
 /* Hero section full-width image */
 .hero {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -109,7 +102,7 @@ section {
 section h2 {
   font-size: 1.5rem;
   text-align: center;
-  background-color: #fd93c8; /* light pink highlight */
+  background-color: #fd93c8; 
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -270,6 +263,65 @@ section h2 {
     color: #333;
   }
   
+  /* Run Cards */
+.run-details {
+  padding: 2rem;
+  text-align: center;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.run-card {
+  border: 2px solid #ff009d;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.run-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-front,
+.card-back {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-front h3 {
+  background-color: #ff009d;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+/* Hide the back by default */
+.card-back {
+  display: none;
+  background-color: #ffe4f0;
+  text-align: left;
+}
+
+/* Show back content on hover, hide front */
+.run-card:hover .card-front {
+  display: none;
+}
+
+.run-card:hover .card-back {
+  display: block;
+}
+
   
   /* CTA */
   .cta h2 {

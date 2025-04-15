@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="She Runs is a female running club focused on building strength, friendship, and fun through group runs on varied terrains." />
+  <meta property="og:title" content="She Runs - Women's Running Club">
+  <meta property="og:description" content="Join a supportive community of women who love running together through parks, trails, roads, and more.">
+  <meta property="og:image" content="../image/she-runs-logo-dark">
+  <meta property="og:url" content="https://github.com/MsebeyenjabuloM/wdd231.git">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="../styles/small.css" />
+  <link rel="stylesheet" href="../styles/larger.css" />
+  <script src="../scripts/main.js" defer></script>
+
+  <title>She Runs | Join</title>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <img src="../images/she-runs-logo-dark.png" alt="She Runs Logo">
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="hamburger" aria-label="Toggle Menu">☰</button>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="../images/group-run- (14).jpeg" alt="Group of women standing side by side" loading="lazy" />
+      <div class="hero-text">
+        <h3>Thinking of joining us?</h3>
+        <p>Here’s everything you need to know.</p>
+      </div>
+    </section>
+
+    <!-- Run Details Section -->
+    <section class="run-details">
+        <h2>Our Weekly Runs</h2>
+        <div class="locations-container" id="locationsContainer">
+          <!-- JS will populate cards here -->
+        </div>
+      </section>
+
+    <!-- Join Form Section -->
+    <section class="join-form-section">
+        <h2>Join She Runs</h2>
+        <form id="joinForm">
+          <label>First Name
+            <input type="text" name="firstName" required />
+          </label>
+          <label>Last Name
+            <input type="text" name="lastName" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" required />
+          </label>
+          <label>Preferred Run Location
+            <select name="runLocation" required>
+              <option value="">Choose one</option>
+              <option value="Promenade">Promenade</option>
+              <option value="Trail">Trail</option>
+              <option value="Track">Track</option>
+              <option value="Road">Road</option>
+            </select>
+          </label>
+          <label>Preferred Time Slot
+            <select name="timeSlot" required>
+              <option value="">Choose a time</option>
+              <option value="5AM-6AM">5AM - 6AM</option>
+              <option value="6PM-7PM">6PM - 7PM</option>
+              <option value="Weekend Mornings">Weekend Mornings</option>
+            </select>
+          </label>
+          <label>Why do you want to join?
+            <textarea name="reason" rows="3"></textarea>
+          </label>
+          <label>Your Running Level
+            <select name="level" required>
+              <option value="">Pick your vibe</option>
+              <option value="Chill Jogger">Chill Jogger</option>
+              <option value="Weekend Warrior">Weekend Warrior</option>
+              <option value="Beast Mode">Beast Mode</option>
+            </select>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="thankYouMessage" class="hidden"></div>
+      </section>
+    </main>
+    
+
+  <footer>
+    <div class="footer-info">
+        <p>Follow us on our socials:</p>
+    </div>
+    <div class="social-media">
+        <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="../images/twitter.png" alt="Twitter"></a>
+        <a href="https://linkedin.com"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <div class="developer-info">
+        <p>&copy; <span id="currentyear"></span> She Runs, 2025</p>
+    </div>
+</footer>
+
+  <script src="../scripts/team.js" defer></script>
+  <script src="../scripts/join.js" defer></script>
+</body>
+</html>

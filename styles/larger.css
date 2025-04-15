@@ -16,28 +16,6 @@
         font-size: 2rem;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .nav-menu {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    .nav-menu li {
-        padding: 0 15px;
-    }
-
     main {
         max-width: 800px;
         margin: 20px auto;
@@ -58,16 +36,6 @@
 
 
 /* header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fd93c8;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -129,29 +97,19 @@ nav {
     color: #000;
 }
 
-
-/* hero section */
-
-/*.hero {
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    overflow: hidden;
-    padding: 0%;
-    margin: 0%;
-  }
-  
-
-
-.hero img {
+.hero {
     width: 100%;
     height: 100%;
-    display: block;
+    position: relative;
+  overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
-}
-*/
-
+  }
+  
 
 .hero-text {
     position: absolute;
@@ -234,6 +192,54 @@ section {
       max-width: 400px;
       height: auto;
     }
+  }
+
+/* 2 per row on large */
+@media screen and (min-width: 768px) {
+    .locations-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    padding: 0 2rem;
+
+    }
+  }
+  
+  /* Form Styling */
+  .join-form-section {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 2px solid #ff009d;
+    border-radius: 0.5rem;
+  }
+  form button {
+    background-color: #ff009d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  form button:hover {
+    background-color: #e6008a;
+  }
+  .hidden {
+    display: none;
+  }
+  #thankYouMessage {
+    text-align: center;
+    padding: 2rem;
   }
   
 

@@ -1,0 +1,35 @@
+[
+    {
+      "location": "Durban Beach Promenade",
+      "type": "Beach Run",
+      "time": "6AM - 7AM",
+      "leader": "Thandi M.",
+      "details": "Scenic flat route with ocean views. Great for beginners and sunrise lovers!",
+      "image": "../images/beach.jpeg"
+    },
+    {
+      "location": "Giba Gorge Trails",
+      "type": "Trail Run",
+      "time": "5PM - 6PM",
+      "leader": "Nokuthula R.",
+      "details": "Hilly forest paths, technical terrain. A fun challenge for adventurous runners.",
+      "image": "../images/trail.jpeg"
+    },
+    {
+      "location": "Kings Park Athletics Track",
+      "type": "Track Run",
+      "time": "6PM - 7PM",
+      "leader": "Lebo K.",
+      "details": "Pace training and speed intervals. Open to all levels, come push yourself!",
+      "image": "../images/track.jpeg"
+    },
+    {
+      "location": "Umhlanga Ridge Roads",
+      "type": "Road Run",
+      "time": "5:30AM - 6:30AM",
+      "leader": "Ayanda B.",
+      "details": "Urban routes with light inclines. Casual group run with good post-run coffee spots.",
+      "image": "../images/road.jpeg"
+    }
+  ]
+  
