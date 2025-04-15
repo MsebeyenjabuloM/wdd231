@@ -50,6 +50,10 @@
     button {
         padding: 15px 30px;
     }
+
+    .team-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
 }
 
 
@@ -148,13 +152,6 @@ nav {
 }
 */
 
-.hero {
-    border: 2px solid red;
-  }
-  .hero img {
-    border: 2px solid blue;
-  }
-
 
 .hero-text {
     position: absolute;
@@ -207,11 +204,38 @@ section {
   section h2 {
     font-size: 2rem;
     text-align: center;
-    background-color: #fff0fa;
+    background-color: #fd93c8;;
     padding: 0.75rem;
     margin-bottom: 2rem;
     border-radius: 0.5rem;
   }
+
+/*About us sectios*/
+
+  @media (min-width: 768px) {
+    .text-img-row {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .text-img-row.reverse {
+      flex-direction: row-reverse;
+    }
+  
+    .text-img-row .text {
+      flex: 1;
+      padding: 1rem;
+    }
+  
+    .text-img-row img {
+      flex: 1;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+  
 
 
 /* Join CTA styling */

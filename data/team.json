@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Lebo M.",
+      "title": "Run Instructor",
+      "experience": "5 years",
+      "longestDistance": "42 km",
+      "favoriteTerrain": "Mountain trails",
+      "image": "../images/lebo.jpeg"
+    },
+    {
+      "name": "Thuli S.",
+      "title": "Pace Coach",
+      "experience": "3 years",
+      "longestDistance": "21 km",
+      "favoriteTerrain": "City roads",
+      "image": "../images/thuli.jpeg"
+    },
+    {
+      "name": "Nokuthula K.",
+      "title": "Endurance Trainer",
+      "experience": "6 years",
+      "longestDistance": "50 km",
+      "favoriteTerrain": "Beach runs",
+      "image": "../images/nokhuthula.jpeg"
+    },
+    {
+      "name": "Zanele R.",
+      "title": "Founder & Coach",
+      "experience": "7 years",
+      "longestDistance": "60 km",
+      "favoriteTerrain": "Park runs",
+      "image": "../images/zanele.jpeg"
+    }
+  ]
+  
